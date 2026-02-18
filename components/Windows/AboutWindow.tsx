@@ -34,6 +34,12 @@ const AboutWindow: React.FC = () => {
         <div className="text-center" style={{ fontSize: '11px', color: '#666' }}>
           Georgia State University
         </div>
+        <div className="mt-2 text-center" style={{ fontSize: '10px', color: '#555' }}>
+          abhaydeepsingh.gm@gmail.com
+        </div>
+        <div className="text-center" style={{ fontSize: '10px', color: '#555' }}>
+          (929) 450-9682
+        </div>
       </div>
 
       {/* Center Section - About Me */}

@@ -64,11 +64,19 @@ const ResumeWindow: React.FC = () => {
         </button>
 
         <button
-          className="win95-button w-full"
+          className="win95-button w-full mb-2"
           onClick={handleShare}
           style={{ padding: '6px 8px', fontSize: '11px' }}
         >
           🔗 Share Resume
+        </button>
+
+        <button
+          className="win95-button w-full"
+          onClick={() => window.open(RESUME_PDF, '_blank')}
+          style={{ padding: '6px 8px', fontSize: '11px' }}
+        >
+          🔎 Open in New Tab
         </button>
       </div>
 
@@ -82,7 +90,6 @@ const ResumeWindow: React.FC = () => {
       >
         <div className="font-bold mb-2">File Info</div>
         <div className="space-y-1">
-          <div>Name: Resume 2026</div>
           <div>Type: PDF Document</div>
           <div>Author: Abhay Deep Singh</div>
         </div>
@@ -109,6 +116,13 @@ const ResumeWindow: React.FC = () => {
               style={{ padding: '6px 8px', fontSize: '11px' }}
             >
               🔗 Share
+            </button>
+            <button
+              className="win95-button flex-1"
+              onClick={() => window.open(RESUME_PDF, '_blank')}
+              style={{ padding: '6px 8px', fontSize: '11px' }}
+            >
+              🔎 Open in New Tab
             </button>
           </div>
         </div>

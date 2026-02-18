@@ -5,6 +5,7 @@ import { useWindowManager } from '@/contexts/WindowManager';
 import DesktopIcon from './DesktopIcon';
 import AboutWindow from '@/components/Windows/AboutWindow';
 import ResumeWindow from '@/components/Windows/ResumeWindow';
+import ContactWindow from '@/components/Windows/ContactWindow';
 import WindowContainer from '@/components/Window/WindowContainer';
 import BouncingLogo from './BouncingLogo';
 
@@ -91,9 +92,9 @@ const Desktop: React.FC = () => {
       onClick: () => openWindow({
         id: 'contact',
         title: 'Contact Me',
-        component: <div className="p-4">Contact form coming soon...</div>,
-        defaultPosition: { x: 200, y: 200 },
-        defaultSize: { width: 400, height: 350 },
+        component: <ContactWindow />,
+        defaultPosition: { x: 200, y: 120 },
+        defaultSize: { width: 380, height: 280 },
       }),
     },
   ];
